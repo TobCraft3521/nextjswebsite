@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  background-color: #0f0f11;
+  color-scheme: dark;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+:root::-webkit-scrollbar{
+  display: none;
+}
