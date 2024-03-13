@@ -14,7 +14,7 @@ const TobCraftxzy = () => {
             src={BackgroundImage}
             width={1000}
             alt="background"
-            className="w-[90rem] flex-none max-w-none dark:block"
+            className="w-[125rem] flex-none max-w-none dark:block md:translate-x-36"
           />
         </div>
       </div>
