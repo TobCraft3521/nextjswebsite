@@ -19,7 +19,7 @@ const TobCraftxzy = () => {
         </div>
       </div>
       <Header />
-      <section className="flex items-center justify-center h-[40vh] transition-opacity ease-in duration-700 opacity-100">
+      <section className="flex items-center justify-center h-[40vh] transition-opacity ease-in duration-700 opacity-100 mb-8">
         <h1 className="bg-gradient-to-r text-8xl from-[#00eeff] to-[#00ff5e] text-transparent bg-clip-text md:flex hidden text-center">
           Hi! I'm Tobias
         </h1>
