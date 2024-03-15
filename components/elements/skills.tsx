@@ -21,8 +21,8 @@ const Skills = () => {
       <h1 className="text-2xl translate-x-[-10vw] md:translate-x-[-20vw] nunito-font text-[#a1a1a1] mb-10 font-semibold">
         MY TECH SKILLS
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-16">
-        <Skill icon={<Atom size={35} />} name="React/NextJS" progress={100} />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-8">
+        <Skill icon={<Atom size={35} />} name="React/NextJS" progress={30} />
         <Skill
           icon={<Brackets size={35} />}
           name="Java-/Typescript"
