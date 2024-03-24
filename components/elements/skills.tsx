@@ -3,6 +3,7 @@ import {
   Atom,
   Brackets,
   Code2,
+  Cpu,
   Gauge,
   Github,
   HardDriveUpload,
@@ -10,6 +11,7 @@ import {
   ListMinus,
   Pen,
   Server,
+  ServerCog,
 } from "lucide-react"
 import Skill from "./skill"
 
@@ -22,33 +24,33 @@ const Skills = () => {
         MY TECH SKILLS
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-8">
-        <Skill icon={<Atom size={35} />} name="React/NextJS" progress={30} />
+        <Skill icon={<Atom size={27} />} name="React/NextJS" progress={90} />
         <Skill
-          icon={<Brackets size={35} />}
+          icon={<Brackets size={27} />}
           name="Java-/Typescript"
-          progress={95}
+          progress={90}
         />
         <Skill
-          icon={<Hash size={35} />}
-          name="TailwindCSS/Style"
-          progress={100}
+          icon={<Hash size={27} />}
+          name="Tailwind-CSS/Style"
+          progress={80}
         />
         <Skill
-          icon={<HardDriveUpload size={35} />}
-          name="Hosting/Linux"
-          progress={100}
+          icon={<HardDriveUpload size={27} />}
+          name="Hosting/Linux/Computers"
+          progress={70}
         />
-        <Skill icon={<Github size={35} />} name="Git/-hub" progress={100} />
+        <Skill icon={<Github size={27} />} name="Git/-hub" progress={85} />
         <Skill
-          icon={<Gauge size={35} />}
-          name="Shortcuts/Workflow"
-          progress={100}
+          icon={<Gauge size={27} />}
+          name="Shorstcuts/Universal"
+          progress={85}
         />
-        <Skill icon={<ListMinus size={35} />} name="Python" progress={100} />
+        <Skill icon={<ListMinus size={27} />} name="Python" progress={60} />
         <Skill
-          icon={<Code2 size={35} />}
+          icon={<Cpu size={27} />}
           name="Hardware/Tech-stuff"
-          progress={100}
+          progress={50}
         />
       </div>
     </div>
