@@ -1,17 +1,12 @@
 import {
-  AArrowDown,
   Atom,
   Brackets,
-  Code2,
   Cpu,
   Gauge,
   Github,
   HardDriveUpload,
   Hash,
   ListMinus,
-  Pen,
-  Server,
-  ServerCog,
 } from "lucide-react"
 import Skill from "./skill"
 

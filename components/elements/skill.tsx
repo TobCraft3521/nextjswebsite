@@ -17,9 +17,9 @@ const Skill = ({ progress, icon, name }: SkillProps) => {
       </div>
       {/* Progress bar */}
       <div className="flex justify-center w-full mt-2">
-        <div className="mt-2 rounded-full w-[90%] bg-slate-900 h-4 text-[#00a1ad]">
+        <div className="mt-2 rounded-full w-[100%] bg-slate-900 h-4 text-[#00a1ad]">
           <div
-            className={"h-4 rounded-full bg-slate-700 relative"}
+            className={"h-4 rounded-full bg-slate-800 relative"}
             style={{
               width: `${progress}%`,
             }}
