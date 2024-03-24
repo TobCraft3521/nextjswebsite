@@ -14,7 +14,7 @@ const TobCraftxzy = () => {
             src={BackgroundImage}
             width={1000}
             alt="background"
-            className="w-[125rem] flex-none max-w-none dark:block md:translate-x-36"
+            className="w-[125rem] flex-none max-w-none  md:translate-x-36"
           />
         </div>
       </div>
@@ -31,6 +31,9 @@ const TobCraftxzy = () => {
       </section>
       <section className="flex justify-center items-center">
         <Skills />
+      </section>
+      <section className="flex justify-center items-center">
+        {/* projects */}
       </section>
     </div>
   )
