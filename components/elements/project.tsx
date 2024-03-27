@@ -27,7 +27,7 @@ interface ProjectProps {
 const Project = ({ name, description, image, footer }: ProjectProps) => {
   return (
     <div>
-      <Card className="w-[350px] h-[420px]">
+      <Card className="h-[420px]">
         <CardContent className="flex justify-center items-center overflow-hidden h-32 m-5 p-0 rounded-lg">
           {image}
         </CardContent>

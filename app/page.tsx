@@ -8,21 +8,9 @@ interface TobCraftxzyProps {}
 
 const TobCraftxzy = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="pointer-events-none">
-        <div className="absolute h-[300vh] w-full translate-y-[-10vh]">
-          <div className="z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none sticky">
-            <div className="w-[108rem] flex-none flex justify-end">
-              <Image
-                src={BackgroundImage}
-                width={1000}
-                alt="background"
-                className="w-[105rem] opacity-100 flex-none max-w-none md:translate-x-36"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="absolute h-[200vh] w-full translate-y-[-10vh]">
+        <div className="absolute h-[90vh] w-full translate-y-[-10vh]">
           <div className="z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none sticky">
             <div className="w-[108rem] flex-none flex justify-end">
               <Image
@@ -68,15 +56,18 @@ const TobCraftxzy = () => {
       <section className="flex justify-center items-center mb-16" id="projects">
         <Projects />
       </section>
-      <section className="flex justify-center items-center mb-16" id="projects">
-        <Projects />
-      </section>
-      <section className="flex justify-center items-center mb-16" id="projects">
-        <Projects />
-      </section>
-      <section className="flex justify-center items-center mb-16" id="projects">
-        <Projects />
-      </section>
+      <section
+        className="flex justify-center items-center mb-16"
+        id="projects"
+      ></section>
+      <section
+        className="flex justify-center items-center mb-16"
+        id="projects"
+      ></section>
+      <section
+        className="flex justify-center items-center mb-16"
+        id="projects"
+      ></section>
     </div>
   )
 }
