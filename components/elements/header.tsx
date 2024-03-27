@@ -8,7 +8,7 @@ interface HeaderProps {}
 
 const Header = () => {
   return (
-    <header className="h-[25vh] top-0">
+    <header className="h-[30vh] top-0 header">
       <div className="flex justify-center items-center p-10 md:justify-between md:mt-0 sticky top-0">
         <div className="flex flex-row gap-5 items-center md:pl-10 ">
           <div className="h-min overflow-hidden rounded-full">
@@ -32,7 +32,7 @@ const Header = () => {
           <Link className="hover:text-cyan-500" href={"#projects"}>
             Projects
           </Link>
-          <Link className="hover:text-cyan-500" href={""}>
+          <Link className="hover:text-cyan-500" href={"#links"}>
             Links
           </Link>
           <Link className="hover:text-cyan-500" href={""}>
