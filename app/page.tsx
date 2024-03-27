@@ -17,7 +17,7 @@ const TobCraftxzy = () => {
                 src={BackgroundImage}
                 width={1000}
                 alt="background"
-                className="w-[105rem] opacity-75 flex-none max-w-none md:translate-x-36"
+                className="w-[105rem] opacity-100 flex-none max-w-none md:translate-x-36"
               />
             </div>
           </div>
@@ -29,7 +29,7 @@ const TobCraftxzy = () => {
                 src={BackgroundImage}
                 width={1000}
                 alt="background"
-                className="w-[105rem] opacity-75 flex-none max-w-none md:translate-x-36"
+                className="w-[105rem] opacity-90 flex-none max-w-none md:translate-x-36"
               />
             </div>
           </div>
@@ -41,7 +41,7 @@ const TobCraftxzy = () => {
                 src={BackgroundImage}
                 width={1000}
                 alt="background"
-                className="w-[105rem] opacity-75 flex-none max-w-none md:translate-x-36"
+                className="w-[105rem] opacity-90 flex-none max-w-none md:translate-x-36"
               />
             </div>
           </div>
@@ -50,7 +50,7 @@ const TobCraftxzy = () => {
 
       <Header />
 
-      <section className="flex items-center justify-center transition-opacity ease-in duration-700 opacity-100 mb-32">
+      <section className="flex items-center justify-center transition-opacity ease-in duration-700 opacity-100 mb-32 pb-5">
         <h1 className="bg-gradient-to-r text-7xl from-[#00eeff] to-[#00ff5e] text-transparent bg-clip-text md:flex hidden text-center">
           Hi! I'm Tobias
         </h1>

@@ -14,8 +14,8 @@ interface SkillsProps {}
 
 const Skills = () => {
   return (
-    <div className="group h-[45vh] w-full flex flex-col items-center">
-      <h1 className="text-2xl translate-x-[-10vw] md:translate-x-[-20vw] nunito-font text-[#a1a1a1] mb-10 font-semibold">
+    <div className="group min-h-[45vh] w-full flex flex-col items-center">
+      <h1 className="text-2xl translate-x-[-10vw] md:translate-x-[-20vw] nunito-font text-slate-500 dark:text-[#a1a1a1] mb-10 font-semibold">
         MY TECH SKILLS
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-8">

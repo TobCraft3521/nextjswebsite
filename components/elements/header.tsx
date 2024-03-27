@@ -21,11 +21,11 @@ const Header = () => {
             />
           </div>
 
-          <div className="font-semibold text-2xl text-[#ced7db]">
+          <div className="font-semibold text-2xl dark:text-[#ced7db] text-slate-500">
             tobcraft.xzy
           </div>
         </div>
-        <div className="text-[#d3d3d3] flex-row gap-5 text-xl font-semibold mr-10 hidden md:flex justify-center items-center">
+        <div className="text-slate-500 dark:text-[#d3d3d3] flex-row gap-5 text-xl font-semibold mr-10 hidden md:flex justify-center items-center">
           <Link className="hover:text-cyan-500" href={"#skills"}>
             Skills
           </Link>
