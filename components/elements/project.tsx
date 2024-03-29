@@ -17,17 +17,18 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import React from "react"
-interface ProjectProps {
+export interface ProjectProps {
   name: string
-  description: React.ReactNode
+  description: string
   image: React.ReactNode
   footer: string
+  link: string
 }
 
 const Project = ({ name, description, image, footer }: ProjectProps) => {
   return (
     <div>
-      <Card className="h-[420px]">
+      <Card className="h-[470px] flex items-stretch flex-col">
         <CardContent className="flex justify-center items-center overflow-hidden h-32 m-5 p-0 rounded-lg">
           {image}
         </CardContent>
@@ -35,7 +36,7 @@ const Project = ({ name, description, image, footer }: ProjectProps) => {
           <CardTitle>{name}</CardTitle>
           <CardDescription className="text-base">{description}</CardDescription>
         </CardHeader>
-        <CardFooter className="text-slate-500">{footer}</CardFooter>
+        <CardFooter className="text-slate-500 mt-auto">{footer}</CardFooter>
       </Card>
     </div>
   )

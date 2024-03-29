@@ -8,7 +8,7 @@ interface HeaderProps {}
 
 const Header = () => {
   return (
-    <header className="h-[30vh] top-0 header">
+    <header className="h-[20vh] md:h-[30vh] top-0 header -z-50">
       <div className="flex justify-center items-center p-10 md:justify-between md:mt-0 sticky top-0">
         <div className="flex flex-row gap-5 items-center md:pl-10 ">
           <div className="h-min overflow-hidden rounded-full">
@@ -21,11 +21,11 @@ const Header = () => {
             />
           </div>
 
-          <div className="font-semibold text-2xl dark:text-[#ced7db] text-slate-500">
+          <div className="font-semibold text-2xl dark:text-[#ced7db] text-[rgb(10,37,64)]">
             tobcraft.xzy
           </div>
         </div>
-        <div className="text-slate-500 dark:text-[#d3d3d3] flex-row gap-5 text-xl font-semibold mr-10 hidden md:flex justify-center items-center">
+        <div className="text-[rgb(10,37,64)] dark:text-[#d3d3d3] flex-row gap-5 text-xl font-semibold mr-10 hidden md:flex justify-center items-center">
           <Link className="hover:text-cyan-500" href={"#skills"}>
             Skills
           </Link>

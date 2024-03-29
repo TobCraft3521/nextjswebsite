@@ -36,10 +36,10 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: #141414;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 0 0 0;
     --card-foreground: 210 40% 98%;
 
     --popover: 222.2 84% 4.9%;
@@ -84,10 +84,10 @@
 :root {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
 }
 
 .header {
-  height: 30vh;
   transition: height 1s; /* Smooth transition effect */
   animation: changeHeight 1s;
 }
@@ -107,7 +107,7 @@
 
 @keyframes changeHeight {
   from {
-    height: 40vh; /* Starting height */
+    height: 35vh; /* Starting height */
   }
   to {
     height: 30vh; /* Final height */
