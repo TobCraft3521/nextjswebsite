@@ -16,6 +16,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { link } from "fs"
+import Link from "next/link"
 import React from "react"
 export interface ProjectProps {
   name: string
@@ -25,20 +27,20 @@ export interface ProjectProps {
   link: string
 }
 
-const Project = ({ name, description, image, footer }: ProjectProps) => {
+const Project = ({ name, description, image, footer, link }: ProjectProps) => {
   return (
-    <div>
+    <Link href={link}>
       <Card className="h-[470px] flex items-stretch flex-col">
-        <CardContent className="flex justify-center items-center overflow-hidden h-32 m-5 p-0 rounded-lg">
+        <CardContent className="flex justify-center items-center overflow-hidden h-32 m-5 p-0">
           {image}
         </CardContent>
         <CardHeader>
           <CardTitle>{name}</CardTitle>
           <CardDescription className="text-base">{description}</CardDescription>
         </CardHeader>
-        <CardFooter className="text-slate-500 mt-auto">{footer}</CardFooter>
+        <CardFooter className="text-[#425466] mt-auto">{footer}</CardFooter>
       </Card>
-    </div>
+    </Link>
   )
 }
 

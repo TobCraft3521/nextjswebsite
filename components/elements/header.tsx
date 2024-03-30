@@ -8,7 +8,7 @@ interface HeaderProps {}
 
 const Header = () => {
   return (
-    <header className="h-[20vh] md:h-[30vh] top-0 header -z-50">
+    <header className="h-[25vh] md:h-[23vh] top-0 header z-50">
       <div className="flex justify-center items-center p-10 md:justify-between md:mt-0 sticky top-0">
         <div className="flex flex-row gap-5 items-center md:pl-10 ">
           <div className="h-min overflow-hidden rounded-full">
@@ -21,21 +21,21 @@ const Header = () => {
             />
           </div>
 
-          <div className="font-semibold text-2xl dark:text-[#ced7db] text-[rgb(10,37,64)]">
+          <div className="font-semibold text-2xl dark:text-white text-[rgb(10,37,64)]">
             tobcraft.xzy
           </div>
         </div>
-        <div className="text-[rgb(10,37,64)] dark:text-[#d3d3d3] flex-row gap-5 text-xl font-semibold mr-10 hidden md:flex justify-center items-center">
-          <Link className="hover:text-cyan-500" href={"#skills"}>
+        <div className="text-[rgb(10,37,64)] dark:text-white flex-row gap-5 text-xl font-semibold mr-10 hidden md:flex justify-center items-center">
+          <Link className="hover:mt-3 transition-all" href={"#skills"}>
             Skills
           </Link>
-          <Link className="hover:text-cyan-500" href={"#projects"}>
+          <Link className="hover:mt-3 transition-all" href={"#projects"}>
             Projects
           </Link>
-          <Link className="hover:text-cyan-500" href={"#links"}>
+          <Link className="hover:mt-3 transition-all" href={"#links"}>
             Links
           </Link>
-          <Link className="hover:text-cyan-500" href={""}>
+          <Link className="hover:mt-3 transition-all" href={""}>
             More
           </Link>
           <ModeToggle />
