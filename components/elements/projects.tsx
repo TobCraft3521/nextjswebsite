@@ -68,7 +68,7 @@ const projects: ProjectProps[] = [
 
 const Projects = () => {
   return (
-    <div className="group h-[65vh] w-full flex flex-col items-center">
+    <div className="group h-[550px] w-full flex flex-col items-center">
       <h1 className="text-2xl md:translate-x-[10vw] nunito-font text-[rgb(10,37,64)] dark:text-[#a1a1a1] mb-10 font-semibold">
         MY CODING PROJECTS
       </h1>

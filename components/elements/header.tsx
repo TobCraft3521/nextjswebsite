@@ -26,16 +26,16 @@ const Header = () => {
           </div>
         </div>
         <div className="text-[rgb(10,37,64)] dark:text-white flex-row gap-5 text-xl font-semibold mr-10 hidden md:flex justify-center items-center">
-          <Link className="hover:mt-3 transition-all" href={"#skills"}>
+          <Link className="hover:text-white transition-all" href={"#skills"}>
             Skills
           </Link>
-          <Link className="hover:mt-3 transition-all" href={"#projects"}>
+          <Link className="hover:text-white transition-all" href={"#projects"}>
             Projects
           </Link>
-          <Link className="hover:mt-3 transition-all" href={"#links"}>
+          <Link className="hover:text-white transition-all" href={"#links"}>
             Links
           </Link>
-          <Link className="hover:mt-3 transition-all" href={""}>
+          <Link className="hover:text-white transition-all" href={""}>
             More
           </Link>
           <ModeToggle />

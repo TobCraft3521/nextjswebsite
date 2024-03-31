@@ -88,7 +88,7 @@
 }
 
 .content {
-  animation: opacityFade 3s;
+  animation: opacityFade 1s;
 }
 
 @keyframes opacityFade {
