@@ -5,6 +5,8 @@ import DiscordBanner from "/public/imgs/discord-banner.jpg"
 import NotionCloneBanner from "/public/imgs/notion-banner.jpg"
 import TobcraftXyzBanner from "/public/imgs/tobcraftxyz-banner.jpg"
 import SpotifyBanner from "/public/imgs/spotify-banner.jpg"
+
+import MoreBanner from "/public/imgs/muchmore.png"
 import {
   Carousel,
   CarouselContent,
@@ -37,7 +39,7 @@ const projects: ProjectProps[] = [
     name: "This insane Site",
     description:
       "My own personal website to showcase my skills and projects: fully responsive, dark and light mode, playground area, and much more.",
-    footer: "Youtube turorial by Code With Antonio",
+    footer: "Dope first impression, right? 🔥 - I love it!",
     image: <Image src={TobcraftXyzBanner} className="rounded-xl" alt="" />,
     link: "#",
   },
@@ -64,12 +66,20 @@ const projects: ProjectProps[] = [
     ),
     link: "https://github.com/TobCraft3521/notion-clone",
   },
+  {
+    name: "More Projects",
+    description:
+      "I am also doing some AI, math or other mini projects to learn new stuff and try out new things. You might find some on my github.",
+    footer: "TensorflowJS, shaders, simulations, ...",
+    image: <Image src={MoreBanner} className="rounded-xl" alt="" />,
+    link: "",
+  },
 ]
 
 const Projects = () => {
   return (
     <div className="group h-[550px] w-full flex flex-col items-center">
-      <h1 className="text-2xl md:translate-x-[10vw] nunito-font text-[rgb(10,37,64)] dark:text-[#a1a1a1] mb-10 font-semibold">
+      <h1 className="text-2xl md:translate-x-[10vw] nunito-font text-[rgb(10,37,64)] dark:text-[#a1a1a1] mb-10 font-semibold z-10">
         MY CODING PROJECTS
       </h1>
       <div className="flex">

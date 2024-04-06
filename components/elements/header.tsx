@@ -35,7 +35,7 @@ const Header = () => {
           <Link className="hover:text-white transition-all" href={"#links"}>
             Links
           </Link>
-          <Link className="hover:text-white transition-all" href={""}>
+          <Link className="hover:text-white transition-all" href={"#more"}>
             More
           </Link>
           <ModeToggle />

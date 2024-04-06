@@ -4,6 +4,7 @@ import { useTheme } from "next-themes"
 import Image from "next/image"
 import TikTok from "/public/imgs/tiktok.svg"
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 const LinksBar = () => {
   const { theme, setTheme } = useTheme()
@@ -18,10 +19,12 @@ const LinksBar = () => {
 
   return (
     <div>
-      <div className="fixed right-0 h-full top-0 w-16 flex-col justify-center hidden md:flex">
-        <div className="h-96 w-16 rounded-tl-3xl rounded-bl-3xl justify-center items-center md:flex flex-col dark:stroke-white">
+      <div className="md:h-96 rounded-tl-3xl rounded-bl-3xl justify-center items-center flex flex-row md:flex-col w-[100vw] md:w-16 gap-16 md:gap-1">
+        <Link href="https://github.com/TobCraft3521/">
           <Github size={32} />
-          <div className="mt-5">
+        </Link>
+        <Link href="https://discord.gg/65tNg6yEY7">
+          <div className="md:mt-5">
             <svg
               width="32"
               height="32"
@@ -44,7 +47,9 @@ const LinksBar = () => {
               </g>
             </svg>
           </div>
-          <div className="mt-5">
+        </Link>
+        <Link href="https://www.tiktok.com/@tobcraft3521">
+          <div className="md:mt-5">
             <svg
               width="32"
               height="32"
@@ -67,7 +72,7 @@ const LinksBar = () => {
               </g>
             </svg>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   )
