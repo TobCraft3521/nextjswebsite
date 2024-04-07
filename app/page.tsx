@@ -78,13 +78,13 @@ const TobCraftxzy = () => {
       {/* box behind the projects  */}
       {/* lg  */}
       <div
-        className="pointer-events-none absolute w-full md:top-[105vh] lg:top-[110vh] md:h-[70vh] lg:h-[85vh] bg-zinc-100 dark:bg-zinc-950 hidden md:block"
+        className="pointer-events-none absolute w-full md:top-[105vh] lg:top-[110vh] md:h-[70vh] lg:h-[85vh] bg-slate-100 dark:bg-zinc-950 hidden md:block"
         style={{
           clipPath: "polygon(0 10%, 100% 0, 100% 90%, 0% 100%)",
         }}
       ></div>
       {/* sm  */}
-      <div className="pointer-events-none absolute w-full top-[141vh] h-[67vh] bg-zinc-100 dark:bg-zinc-950 md:hidden"></div>
+      <div className="pointer-events-none absolute w-full top-[141vh] h-[67vh] bg-slate-100 dark:bg-zinc-950 md:hidden"></div>
 
       {/* dashed lines */}
       <div className="md:hidden">
@@ -127,7 +127,49 @@ const TobCraftxzy = () => {
           </div>
         </div>
       </div>
+      {/* 2nd page of dashed lines */}
+      <div className="md:hidden">
+        <div className="Guides top-[100vh] -z-10">
+          <div className="Guides__containerSm">
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+          </div>
+        </div>
+        <div className="Guides top-[100vh] -z-10">
+          <div className="Guides__containerSm">
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+          </div>
+        </div>
+      </div>
+      <div className="hidden md:block">
+        <div className="Guides top-[100vh] -z-10">
+          <div className="Guides__containerLg">
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+          </div>
+        </div>
+        <div className="Guides top-[100vh] -z-10">
+          <div className="Guides__containerLg">
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+            <div className="Guides__guide"></div>
+          </div>
+        </div>
+      </div>
 
+      {/* links bar */}
       <div className="fixed right-0 h-full top-0 w-16 flex-col justify-center hidden md:flex">
         <LinksBar />
       </div>
