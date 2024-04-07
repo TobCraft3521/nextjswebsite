@@ -1,6 +1,4 @@
-import { useEffect } from "react"
-
-export const count = async () => {
+const count = async () => {
   const counterApiKey = process.env.COUNTER_API_KEY
   const data = await fetch(
     "https://api.api-ninjas.com/v1/counter?id=tobcraft.xyz&hit=true",

@@ -1,17 +1,10 @@
 import Header from "@/components/elements/header"
-import Skills from "@/components/elements/skills"
-import Image from "next/image"
-import BackgroundImage from "/public/imgs/background.png"
-import Projects from "@/components/elements/projects"
 import Links from "@/components/elements/links"
-import { Github } from "lucide-react"
-import Discord from "/public/imgs/discord.svg"
+import Projects from "@/components/elements/projects"
+import Skills from "@/components/elements/skills"
 
-import { useTheme } from "next-themes"
-import LinksBar from "@/components/elements/linksbar"
 import Footer from "@/components/elements/footer"
-import { useEffect } from "react"
-import { Counter, count } from "@/components/elements/counter"
+import LinksBar from "@/components/elements/linksbar"
 interface TobCraftxzyProps {}
 
 const TobCraftxzy = () => {
