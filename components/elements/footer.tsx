@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Icon from "/public/imgs/hand.jpg"
 import Link from "next/link"
+import { Counter } from "./counter"
 
 const Footer = () => {
   return (
@@ -25,6 +26,8 @@ const Footer = () => {
         <Link href="https://discord.gg/65tNg6yEY7">Discord</Link>
         <Link href="https://www.tiktok.com/@tobcraft3521">TikTok</Link>
       </div>
+      <br />
+      <Counter />
     </footer>
   )
 }

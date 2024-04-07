@@ -10,7 +10,8 @@ import Discord from "/public/imgs/discord.svg"
 import { useTheme } from "next-themes"
 import LinksBar from "@/components/elements/linksbar"
 import Footer from "@/components/elements/footer"
-
+import { useEffect } from "react"
+import { Counter, count } from "@/components/elements/counter"
 interface TobCraftxzyProps {}
 
 const TobCraftxzy = () => {
@@ -74,7 +75,7 @@ const TobCraftxzy = () => {
       <div className="pointer-events-none absolute h-[60vh] w-full top-0">
         <iframe
           src="https://fabulous-lolly-6bfbb9.netlify.app/Gradient.html"
-          className="top-0 left-0 w-full h-[50vh] z-[-1] opacity-75 dark:opacity-80 sticky"
+          className="top-0 left-0 w-full h-[50vh] z-[-1] opacity-80 dark:opacity-80 sticky"
           style={{
             clipPath: "polygon(0 0, 100% 0, 100% 22%, 0 100%)",
           }}
@@ -84,13 +85,13 @@ const TobCraftxzy = () => {
       {/* box behind the projects  */}
       {/* lg  */}
       <div
-        className="pointer-events-none absolute w-full top-[110vh] h-[85vh] bg-zinc-100 dark:bg-zinc-950 hidden lg:block"
+        className="pointer-events-none absolute w-full md:top-[105vh] lg:top-[110vh] md:h-[70vh] lg:h-[85vh] bg-zinc-100 dark:bg-zinc-950 hidden md:block"
         style={{
           clipPath: "polygon(0 10%, 100% 0, 100% 90%, 0% 100%)",
         }}
       ></div>
       {/* sm  */}
-      <div className="pointer-events-none absolute w-full top-[141vh] h-[67vh] bg-zinc-100 dark:bg-zinc-950 lg:hidden"></div>
+      <div className="pointer-events-none absolute w-full top-[141vh] h-[67vh] bg-zinc-100 dark:bg-zinc-950 md:hidden"></div>
 
       {/* dashed lines */}
       <div className="md:hidden">
@@ -160,15 +161,6 @@ const TobCraftxzy = () => {
         <Projects />
       </section>
 
-      <section
-        className="flex justify-center items-center mb-16 mt-48"
-        id="more"
-      >
-        <h1 className="text-2xl md:-translate-x-[10vw] nunito-font text-[rgb(10,37,64)] dark:text-[#a1a1a1] mb-10 font-semibold z-10 uppercase">
-          Placeholder for more stuff
-        </h1>
-      </section>
-
       {/* dashed lines */}
       <div className="md:hidden">
         <div className="Guides top-0 -translate-y-[90vh] h-[120%] -z-2">
@@ -212,6 +204,15 @@ const TobCraftxzy = () => {
       </div>
       <section className="flex justify-center items-center" id="links">
         <Links />
+      </section>
+      <section
+        className="flex flex-col justify-center items-center mb-16 md:mt-48"
+        id="more"
+      >
+        <h1 className="text-2xl md:-translate-x-[10vw] nunito-font text-[rgb(10,37,64)] dark:text-[#a1a1a1] mb-10 font-semibold z-10 uppercase">
+          Placeholder
+        </h1>
+        ...
       </section>
       <Footer />
     </div>

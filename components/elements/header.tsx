@@ -8,8 +8,8 @@ interface HeaderProps {}
 
 const Header = () => {
   return (
-    <header className="h-[25vh] md:h-[23vh] top-0 header z-50">
-      <div className="flex justify-center items-center p-10 md:justify-between md:mt-0 sticky top-0">
+    <header className="h-[25vh] md:h-[23vh] top-0 header z-50 w-full">
+      <div className="flex justify-center items-center p-10 md:pl-16 md:pr-16 md:justify-between md:mt-0 sticky top-0">
         <div className="flex flex-row gap-5 items-center md:pl-10 ">
           <div className="h-min overflow-hidden rounded-full">
             <Image
