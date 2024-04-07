@@ -6,7 +6,7 @@ import NotionCloneBanner from "/public/imgs/notion-banner.jpg"
 import TobcraftXyzBanner from "/public/imgs/tobcraftxyz-banner.jpg"
 import SpotifyBanner from "/public/imgs/spotify-banner.jpg"
 
-import MoreBanner from "/public/imgs/muchmore.png"
+import MoreBanner from "/public/imgs/muchmore.jpg"
 import {
   Carousel,
   CarouselContent,
