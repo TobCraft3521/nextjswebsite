@@ -13,6 +13,8 @@ const Intro = () => {
             src={Hand}
             alt="hand icon"
             className="rounded-full w-16 md:w-32"
+            width={128}
+            height={128}
           />
           <h1 className="md:hidden text-2xl font-bold">About me</h1>
         </div>
