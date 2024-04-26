@@ -30,16 +30,18 @@ export interface ProjectProps {
 const Project = ({ name, description, image, footer, link }: ProjectProps) => {
   return (
     <Link href={link}>
-      <Card className="h-[470px] flex items-stretch flex-col">
-        <CardContent className="flex justify-center items-center overflow-hidden h-32 m-5 p-0">
+      <div className="h-[230px] flex items-stretch flex-col p-8 rounded-3xl bg-white">
+        {/* <div className="flex justify-center items-center overflow-hidden h-32 mb-4 p-0">
           {image}
-        </CardContent>
-        <CardHeader>
-          <CardTitle>{name}</CardTitle>
-          <CardDescription className="text-base">{description}</CardDescription>
-        </CardHeader>
-        <CardFooter className="text-[#425466] mt-auto">{footer}</CardFooter>
-      </Card>
+        </div> */}
+        <div>
+          <h1 className="text-xl font-semibold text-[rgb(10,37,64)]">{name}</h1>
+          <p className="text-sm text-[rgb(10,37,64)] font-light">
+            {description}
+          </p>
+        </div>
+        <p className="text-[rgb(10,37,64)] mt-auto text-xs">{footer}</p>
+      </div>
     </Link>
   )
 }

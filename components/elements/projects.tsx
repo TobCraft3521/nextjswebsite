@@ -1,12 +1,11 @@
 import Image from "next/image"
 import Project, { ProjectProps } from "./project"
-import EcommerceBanner from "/public/imgs/ecommerce-banner.jpg"
 import DiscordBanner from "/public/imgs/discord-banner.jpg"
+import EcommerceBanner from "/public/imgs/ecommerce-banner.jpg"
 import NotionCloneBanner from "/public/imgs/notion-banner.jpg"
-import TobcraftXyzBanner from "/public/imgs/tobcraftxyz-banner.jpg"
 import SpotifyBanner from "/public/imgs/spotify-banner.jpg"
+import TobcraftXyzBanner from "/public/imgs/tobcraftxyz-banner.jpg"
 
-import MoreBanner from "/public/imgs/muchmore.jpg"
 import {
   Carousel,
   CarouselContent,
@@ -14,7 +13,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel"
-import { Card, CardContent } from "../ui/card"
+import MoreBanner from "/public/imgs/muchmore.jpg"
 
 interface ProjectsProps {}
 
@@ -39,9 +38,9 @@ const projects: ProjectProps[] = [
     name: "This insane Site",
     description:
       "My own personal website to showcase my skills and projects: fully responsive, dark and light mode, playground area, and much more.",
-    footer: "Dope first impression, right? 🔥 - I love it!",
+    footer: "Dope design, right? 🔥 - I love it!",
     image: <Image src={TobcraftXyzBanner} className="rounded-xl" alt="" />,
-    link: "#",
+    link: "https://github.com/TobCraft3521",
   },
 
   {
@@ -78,14 +77,21 @@ const projects: ProjectProps[] = [
 
 const Projects = () => {
   return (
-    <div className="group h-[550px] w-full flex flex-col items-center">
-      <h1 className="text-2xl md:translate-x-[10vw] nunito-font text-[rgb(10,37,64)] dark:text-[#a1a1a1] mb-10 font-semibold z-10">
-        MY CODING PROJECTS
+    <div
+      className="group w-full flex flex-col items-center bg-fixed bg-cover p-8"
+      style={{
+        // clipPath: "polygon(0 10%, 100% 0, 100% 90%, 0% 100%)",
+        backgroundImage: "url('/imgs/backgrounds/bggradientpurple.webp')",
+      }}
+    >
+      <h1 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
+        My Coding Projects
       </h1>
+      <br />
       <div className="flex">
         <Carousel
-          opts={{ loop: true, align: "center" }}
-          className="w-full xl:max-w-7xl max-w-[75vw]"
+          opts={{ loop: true, align: "start" }}
+          className="w-full xl:max-w-5xl max-w-[70vw]"
         >
           <CarouselContent>
             {projects.map((project, index) => (

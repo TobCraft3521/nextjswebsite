@@ -18,8 +18,6 @@ const Footer = () => {
       <br />
       tobcraft.xyz
       <br />
-      Inspired by stripe.com
-      <br />
       <br />
       <div className="flex gap-3 text-black dark:text-white font-semibold">
         <Link href="https://github.com/TobCraft3521">Github</Link>

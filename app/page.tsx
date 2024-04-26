@@ -5,6 +5,7 @@ import Skills from "@/components/elements/skills"
 
 import Footer from "@/components/elements/footer"
 import LinksBar from "@/components/elements/linksbar"
+import Intro from "@/components/elements/intro"
 interface TobCraftxzyProps {}
 
 const TobCraftxzy = () => {
@@ -64,27 +65,6 @@ const TobCraftxzy = () => {
 
       <Header />
       {/* sticky container */}
-      {/* dope gradient */}
-      <div className="pointer-events-none absolute h-[60vh] w-full top-0">
-        <iframe
-          src="https://fabulous-lolly-6bfbb9.netlify.app/Gradient.html"
-          className="top-0 left-0 w-full h-[50vh] z-[-1] opacity-80 dark:opacity-80 sticky"
-          style={{
-            clipPath: "polygon(0 0, 100% 0, 100% 22%, 0 100%)",
-          }}
-        ></iframe>
-      </div>
-
-      {/* box behind the projects  */}
-      {/* lg  */}
-      <div
-        className="pointer-events-none absolute w-full md:top-[105vh] lg:top-[110vh] md:h-[70vh] lg:h-[85vh] bg-slate-100 dark:bg-zinc-950 hidden md:block"
-        style={{
-          clipPath: "polygon(0 10%, 100% 0, 100% 90%, 0% 100%)",
-        }}
-      ></div>
-      {/* sm  */}
-      <div className="pointer-events-none absolute w-full top-[141vh] h-[67vh] bg-slate-100 dark:bg-zinc-950 md:hidden"></div>
 
       {/* dashed lines */}
       <div className="md:hidden">
@@ -170,27 +150,49 @@ const TobCraftxzy = () => {
       </div>
 
       {/* links bar */}
-      <div className="fixed right-0 h-full top-0 w-16 flex-col justify-center hidden md:flex">
-        <LinksBar />
+      <div className="fixed right-0 h-full top-0 w-16 flex-col justify-center hidden md:flex z-20">
+        <LinksBar orientation="vertical" />
       </div>
 
-      <section className="flex items-center justify-center opacity-100 mb-16 pb-5 content">
-        {/* <h1 className="text-8xl font-bold text-[rgb(10,37,64)] dark:text-white md:hidden hidden text-center z-[-2] -translate-x-20">
-          Hey! I'm Tobias
-        </h1> */}
-        <h1 className="font-bold text-6xl md:text-8xl md:flex z-[-2] flex text-center md:-translate-x-32">
+      {/* lg  */}
+      <div
+        className="font-bold text-6xl md:text-7xl hidden md:flex justify-center items-center w-[100vw] bg-fixed bg-white text-white p-32 mb-0 overflow-hidden -z-20"
+        style={{
+          backgroundImage: "url('/imgs/backgrounds/bggradientpurple.webp')",
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 85%)",
+          zIndex: -20,
+        }}
+      >
+        <h1 className="translate-y-8 z-30 hi">
           Hi! I'm
           <br />
           Tobias
         </h1>
-      </section>
+      </div>
+
+      {/* sm  */}
+      <div
+        className="font-bold text-6xl md:text-7xl flex lg:hidden justify-center items-center w-[100vw] bg-fixed bg-white text-white p-32 mb-0 overflow-hidden -z-20"
+        style={{
+          backgroundImage: "url('/imgs/backgrounds/bggradientred2.webp')",
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 85%)",
+          zIndex: -20,
+        }}
+      >
+        <h1 className="translate-y-8 z-30 hi">
+          Hi! I'm
+          <br />
+          Tobias
+        </h1>
+      </div>
 
       {/* sections */}
       <section
-        className="flex justify-center items-center mb-16 content"
+        className="flex flex-col justify-center items-center mb-4 content"
         id="skills"
       >
         <Skills />
+        <Intro />
       </section>
       <section className="flex justify-center items-center mb-16" id="projects">
         <Projects />
@@ -237,17 +239,17 @@ const TobCraftxzy = () => {
           </div>
         </div>
       </div>
-      <section className="flex justify-center items-center" id="links">
-        <Links />
-      </section>
       <section
         className="flex flex-col justify-center items-center mb-16 md:mt-48"
         id="more"
       >
-        <h1 className="text-2xl md:-translate-x-[10vw] nunito-font text-[rgb(10,37,64)] dark:text-[#a1a1a1] mb-10 font-semibold z-10 uppercase">
+        <h1 className="text-2xl nunito-font text-[rgb(10,37,64)] dark:text-[#a1a1a1] font-bold z-10 uppercase">
           Placeholder
         </h1>
         ...
+      </section>
+      <section className="flex justify-center items-center" id="links">
+        <Links />
       </section>
       <Footer />
     </div>

@@ -150,3 +150,7 @@
   );
   background-size: 1px 8px;
 }
+
+body {
+  width: 100vw !important;
+}

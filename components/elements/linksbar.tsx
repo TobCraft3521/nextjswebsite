@@ -5,8 +5,13 @@ import Image from "next/image"
 import TikTok from "/public/imgs/tiktok.svg"
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { cn } from "@/lib/utils"
 
-const LinksBar = () => {
+interface LinksBarProps {
+  orientation?: "horizontal" | "vertical"
+}
+
+const LinksBar = ({ orientation }: LinksBarProps) => {
   const { theme, setTheme } = useTheme()
   const [strokeProps, setStrokeProps] = useState({})
   useEffect(() => {
@@ -19,12 +24,23 @@ const LinksBar = () => {
 
   return (
     <div>
-      <div className="md:h-96 rounded-tl-3xl rounded-bl-3xl justify-center items-center flex flex-row md:flex-col w-[100vw] md:w-16 gap-16 md:gap-1">
-        <Link href="https://github.com/TobCraft3521/">
+      <div
+        className={cn(
+          "rounded-3xl justify-center gap-1 items-center flex flex-row w-[100vw] md:w-16",
+          orientation === "vertical" ? "flex-col" : ""
+        )}
+      >
+        <Link
+          href="https://github.com/TobCraft3521/"
+          className="p-2 hover:bg-slate-100 dark:hover:bg-zinc-800 hover:-translate-x-1 rounded-xl transition-all"
+        >
           <Github size={32} />
         </Link>
-        <Link href="https://discord.gg/65tNg6yEY7">
-          <div className="md:mt-5">
+        <Link
+          href="https://discord.gg/65tNg6yEY7"
+          className="p-2 hover:bg-slate-100 dark:hover:bg-zinc-800 hover:-translate-x-1 rounded-xl transition-all"
+        >
+          <div className="">
             <svg
               width="32"
               height="32"
@@ -48,8 +64,11 @@ const LinksBar = () => {
             </svg>
           </div>
         </Link>
-        <Link href="https://www.tiktok.com/@tobcraft3521">
-          <div className="md:mt-5">
+        <Link
+          href="https://www.tiktok.com/@tobcraft3521"
+          className="p-2 hover:bg-slate-100 dark:hover:bg-zinc-800 hover:-translate-x-1 rounded-xl transition-all"
+        >
+          <div className="">
             <svg
               width="32"
               height="32"

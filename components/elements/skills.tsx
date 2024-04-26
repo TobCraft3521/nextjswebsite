@@ -14,11 +14,11 @@ interface SkillsProps {}
 
 const Skills = () => {
   return (
-    <div className="group min-h-[60vh] w-full flex flex-col items-center mt-6 pb-12 md:pb-0">
-      <h1 className="text-2xl translate-x-[-10vw] md:translate-x-[-20vw] nunito-font text-[rgb(10,37,64)] dark:text-[#a1a1a1] mb-10 font-semibold">
+    <div className="group w-full flex flex-col items-center mb-16 p-16 pt-8">
+      <h1 className="text-2xl translate-x-[-10vw] md:translate-x-[-20vw] nunito-font text-[rgb(10,37,64)] dark:text-white mb-10 font-bold">
         MY TECH SKILLS
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
         <Skill icon={<Atom size={27} />} name="React/NextJS" progress={90} />
         <Skill
           icon={<Brackets size={27} />}
