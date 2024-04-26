@@ -172,7 +172,7 @@ const TobCraftxzy = () => {
 
       {/* sm  */}
       <div
-        className="font-bold text-6xl md:text-7xl flex lg:hidden justify-center items-center w-[100vw] bg-fixed bg-white text-white p-32 mb-0 overflow-hidden -z-20"
+        className="font-bold text-6xl md:text-7xl flex md:hidden justify-center items-center w-[100vw] bg-fixed bg-white text-white p-32 mb-0 overflow-hidden -z-20"
         style={{
           backgroundImage: "url('/imgs/backgrounds/bggradientred2.webp')",
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 85%)",
