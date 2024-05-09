@@ -11,7 +11,7 @@ const Skill = ({ progress, icon, name }: SkillProps) => {
     <div className="w-full md:w-[40vw] lg:w-[18vw] cursor-pointer skill">
       <div className="flex flex-row items-center gap-4">
         <div className="text-[rgb(10,37,64)] dark:text-white">{icon}</div>
-        <div className="font-bold text-xl text-[rgb(10,37,64)] dark:text-slate-100 truncate">
+        <div className="font-bold text-lg text-[rgb(10,37,64)] dark:text-slate-100 truncate">
           {name}
         </div>
       </div>

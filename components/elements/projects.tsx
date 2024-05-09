@@ -78,7 +78,7 @@ const projects: ProjectProps[] = [
 const Projects = () => {
   return (
     <div
-      className="group w-full flex flex-col items-center bg-fixed bg-cover p-8"
+      className="group w-full flex flex-col items-center bg-fixed bg-cover p-8 projects"
       style={{
         // clipPath: "polygon(0 10%, 100% 0, 100% 90%, 0% 100%)",
         backgroundImage: "url('/imgs/backgrounds/bggradientpurple.webp')",
