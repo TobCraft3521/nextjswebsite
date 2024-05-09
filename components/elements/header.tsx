@@ -8,8 +8,8 @@ interface HeaderProps {}
 
 const Header = () => {
   return (
-    <header className="h-[25vh] md:h-[20vh] top-0 absolute header z-50 w-full">
-      <div className="flex justify-center items-center p-10 md:pl-16 md:pr-16 md:justify-between md:mt-0 top-0">
+    <header className="top-0 absolute header z-50 w-full">
+      <div className="flex justify-center items-center p-16 md:px-32 md:justify-between md:mt-0 top-0">
         <div className="flex flex-row gap-5 items-center md:pl-10 ">
           <div className="h-min overflow-hidden rounded-full">
             <Image
@@ -21,7 +21,7 @@ const Header = () => {
             />
           </div>
 
-          <div className="font-semibold text-2xl dark:text-white text-white hover:text-slate-300">
+          <div className="font-semibold text-2xl md:text-[rgb(10,37,64)] text-white hover:text-slate-300">
             tobcraft.xzy
           </div>
         </div>

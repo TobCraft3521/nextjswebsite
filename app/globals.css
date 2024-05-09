@@ -114,7 +114,7 @@
 /* grid like stripe */
 .Guides {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   left: 0;
   padding: 0 16px;
@@ -126,7 +126,7 @@
   grid: 1fr / repeat(5, 1fr);
   position: relative;
   max-width: 100vw;
-  height: 100%;
+  height: 100vh !important;
   margin: 0 auto;
 }
 
@@ -135,12 +135,13 @@
   grid: 1fr / repeat(2, 1fr);
   position: relative;
   max-width: 100vw;
-  height: 100%;
+  height: 100vh !important;
   margin: 0 auto;
 }
 
 .Guides__guide {
   width: 1px;
+  height: 100vh;
   background: linear-gradient(
     180deg,
     rgba(66, 71, 112, 0.09),

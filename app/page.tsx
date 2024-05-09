@@ -6,66 +6,15 @@ import Skills from "@/components/elements/skills"
 import Footer from "@/components/elements/footer"
 import LinksBar from "@/components/elements/linksbar"
 import Intro from "@/components/elements/intro"
+import GradientShape from "/public/imgs/backgrounds/clickupgradient2.png"
+import Image from "next/image"
+import Skill from "@/components/elements/skill"
 interface TobCraftxzyProps {}
 
 const TobCraftxzy = () => {
   return (
     <div className="">
-      {/* <div className="pointer-events-none">
-        <div className="absolute h-[90vh] w-full translate-y-[-10vh]">
-          <div className="-z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none sticky">
-            <div className="w-[108rem] flex-none flex justify-end">
-              <Image
-                src={BackgroundImage}
-                width={1000}
-                alt="background"
-                className="w-[70rem] opacity-90 flex-none max-w-none md:-translate-x-36"
-              />
-              
-            </div>
-          </div>
-        </div>
-        <div className="absolute h-[90vh] w-full top-0">
-          <div className="-z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none sticky">
-            <div className="w-[108rem] flex-none flex justify-end">
-              <Image
-                src={BackgroundImage}
-                width={1000}
-                alt="background"
-                className="w-[70rem] opacity-90 flex-none max-w-none md:-translate-x-36"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="absolute h-[90vh] w-full top-0">
-          <div className="-z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none sticky">
-            <div className="w-[108rem] flex-none flex justify-end">
-              <Image
-                src={BackgroundImage}
-                width={1000}
-                alt="background"
-                className="w-[70rem] opacity-90 flex-none max-w-none md:-translate-x-36"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="absolute h-[90vh] w-full top-0 dark:hidden">
-          <div className="-z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none sticky">
-            <div className="w-[108rem] flex-none flex justify-end">
-              <Image
-                src={BackgroundImage}
-                width={1000}
-                alt="background"
-                className="w-[70rem] opacity-90 flex-none max-w-none md:-translate-x-36"
-              />
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       <Header />
-      {/* sticky container */}
-
       {/* dashed lines */}
       <div className="md:hidden">
         <div className="Guides top-0 -z-1">
@@ -154,100 +103,35 @@ const TobCraftxzy = () => {
         <LinksBar orientation="vertical" />
       </div>
 
-      {/* lg  */}
-      <div
-        className="font-bold text-6xl md:text-7xl hidden md:flex justify-center items-center w-[100vw] bg-fixed bg-white text-white p-32 mb-0 overflow-hidden -z-20"
-        style={{
-          backgroundImage: "url('/imgs/backgrounds/bggradientpurple.webp')",
-          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 85%)",
-          zIndex: -20,
-        }}
-      >
-        <h1 className="translate-y-8 z-30 hi">
-          Hi! I'm
-          <br />
-          Tobias
-        </h1>
+      <div className="absolute right-0 top-0">
+        <Image
+          src={GradientShape}
+          alt="background gradient shape"
+          className="md:w-[60vw] md:h-[90vh] -z-50 pointer-events-none select-none"
+        />
       </div>
+      <Skills />
+      <div className="min-h-screen">
+        <div className="font-bold text-6xl md:text-7xl flex justify-center items-center w-[100vw] text-white md:text-[rgb(10,37,64)] md:p-32 md:pb-0">
+          <h1 className="md:-translate-x-[25vw] mt-32 md:mt-32 md:mb-20 z-20">
+            Hi! I'm
+            <br />
+            <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+              Tobias
+            </span>
+          </h1>
+        </div>
 
-      {/* sm  */}
-      <div
-        className="font-bold text-6xl md:text-7xl flex md:hidden justify-center items-center w-[100vw] bg-fixed bg-white text-white p-32 mb-0 overflow-hidden -z-20"
-        style={{
-          backgroundImage: "url('/imgs/backgrounds/bggradientred2.webp')",
-          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 85%)",
-          zIndex: -20,
-        }}
-      >
-        <h1 className="translate-y-8 z-30 hi">
-          Hi! I'm
-          <br />
-          Tobias
-        </h1>
+        <div className="">
+          <Intro />
+        </div>
       </div>
 
       {/* sections */}
-      <section
-        className="flex flex-col justify-center items-center mb-4 content"
-        id="skills"
-      >
-        <Skills />
-        <Intro />
-      </section>
       <section className="flex justify-center items-center mb-16" id="projects">
         <Projects />
       </section>
 
-      {/* dashed lines */}
-      <div className="md:hidden">
-        <div className="Guides top-0 -translate-y-[90vh] h-[120%] -z-2">
-          <div className="Guides__containerSm">
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-          </div>
-        </div>
-        <div className="Guides top-0 -translate-y-[90vh] h-[120%] -z-2">
-          <div className="Guides__containerSm">
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-          </div>
-        </div>
-      </div>
-      <div className="hidden md:block">
-        <div className="Guides top-0 -translate-y-[90vh] h-[120%] -z-2">
-          <div className="Guides__containerLg">
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-          </div>
-        </div>
-        <div className="Guides top-0 -translate-y-[90vh] h-[120%] -z-2">
-          <div className="Guides__containerLg">
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-            <div className="Guides__guide"></div>
-          </div>
-        </div>
-      </div>
-      <section
-        className="flex flex-col justify-center items-center mb-16 md:mt-48"
-        id="more"
-      >
-        <h1 className="text-2xl nunito-font text-[rgb(10,37,64)] dark:text-[#a1a1a1] font-bold z-10 uppercase">
-          Placeholder
-        </h1>
-        ...
-      </section>
       <section className="flex justify-center items-center" id="links">
         <Links />
       </section>
