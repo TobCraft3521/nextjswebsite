@@ -87,30 +87,6 @@
   scroll-behavior: smooth;
 }
 
-.skillani {
-  animation: widthGrow 2s ease-in-out;
-  animation-delay: 500ms;
-}
-
-/* animation from 0% width to 100% width */
-@keyframes widthGrow {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes opacityFade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /* grid like stripe */
 .Guides {
   position: absolute;
