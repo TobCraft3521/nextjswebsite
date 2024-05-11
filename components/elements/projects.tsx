@@ -21,7 +21,7 @@ const projects: ProjectProps[] = [
   {
     name: "E-commerce Store",
     description:
-      "An e-commerce store created using Next.js, Stripe, ... with a custom admin dashboard and much more.",
+      "An e-commerce store 🏪 created using Next.js, Stripe 💵, ... with a custom admin dashboard and much more.",
     footer: "Youtube turorial by JSMastery",
     image: <Image src={EcommerceBanner} className="rounded-xl" alt="" />,
     link: "https://github.com/TobCraft3521/ecommerce",
@@ -29,7 +29,7 @@ const projects: ProjectProps[] = [
   {
     name: "Discord Clone",
     description:
-      "A fully functional discord clone with realtime chat, voice chat, video chat, invite links and much more.",
+      "A fully functional discord clone with realtime chat 💬, voice chat, video chat 🎥, invite links 🔗 and much more.",
     footer: "Youtube turorial by Code With Antonio",
     image: <Image src={DiscordBanner} className="rounded-xl" alt="" />,
     link: "https://github.com/TobCraft3521/discord-clone",
@@ -37,7 +37,7 @@ const projects: ProjectProps[] = [
   {
     name: "This insane Site",
     description:
-      "My own personal website to showcase my skills and projects: fully responsive, dark and light mode, playground area, and much more.",
+      "My own personal website to showcase my skills and projects: fully responsive, dark and light mode, cool animations, and much more.",
     footer: "Dope design, right? 🔥 - I love it!",
     image: <Image src={TobcraftXyzBanner} className="rounded-xl" alt="" />,
     link: "https://github.com/TobCraft3521",
@@ -46,7 +46,7 @@ const projects: ProjectProps[] = [
   {
     name: "Spotify Clone",
     description:
-      "A fully functional spotify clone with liked songs library, playlists, search, and much more.",
+      "A fully functional spotify clone 🎵 with liked songs library, playlists 📃, search 🔍, and much more.",
     footer: "Youtube turorial by Code With Antonio",
     image: <Image src={SpotifyBanner} className="rounded-xl" alt="" />,
     link: "https://github.com/TobCraft3521/spotify-clone-nextjs",
@@ -54,7 +54,7 @@ const projects: ProjectProps[] = [
   {
     name: "Notion Clone",
     description:
-      "A Notion clone with realtime cursors, diffrently charged accounts as well as a very cool landing page. admin dashboard and much more.",
+      "A Notion clone with realtime cursors 🖱️, diffrently charged accounts 💳 as well as a very cool landing page. admin dashboard and much more.",
     footer: "Youtube turorial by Web Prodigies",
     image: (
       <Image
@@ -68,7 +68,7 @@ const projects: ProjectProps[] = [
   {
     name: "More Projects",
     description:
-      "I am also doing some AI, math or other mini projects to learn new stuff and try out new things. You might find some on my github.",
+      "I am also doing some AI 🤖, math or other mini projects to learn new stuff and try out new things. You might find some (not all) on my github.",
     footer: "TensorflowJS, shaders, simulations, ...",
     image: <Image src={MoreBanner} className="rounded-xl" alt="" />,
     link: "",
@@ -78,7 +78,7 @@ const projects: ProjectProps[] = [
 const Projects = () => {
   return (
     <div
-      className="group w-full flex flex-col items-center bg-fixed bg-cover p-8 projects"
+      className="group w-full flex flex-col items-center bg-fixed bg-cover p-16 projects drop-shadow-2xl"
       style={{
         // clipPath: "polygon(0 10%, 100% 0, 100% 90%, 0% 100%)",
         backgroundImage: "url('/imgs/backgrounds/bggradientpurple.webp')",
@@ -87,6 +87,9 @@ const Projects = () => {
       <h1 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
         My Coding Projects
       </h1>
+      <p className="mt-2 text-xl text-gray-300 mb-4">
+        These are some of my large Next.js fullstack projects I made.
+      </p>
       <br />
       <div className="flex">
         <Carousel

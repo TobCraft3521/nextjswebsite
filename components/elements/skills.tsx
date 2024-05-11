@@ -37,7 +37,7 @@ const Skills = () => {
           style={{
             transform: `translateX(${scrollPosition}px)`,
           }}
-          className="drop-shadow-2xl skills bg-white dark:bg-slate-950 rounded-3xl lg:w-[22vw] p-8 border-slate-200 dark:border-slate-800 border-[1px] space-y-4 absolute left-[2vw]"
+          className="drop-shadow-2xl skills bg-white dark:bg-zinc-950 rounded-3xl lg:w-[22vw] p-8 border-slate-200 dark:border-slate-800 border-[1px] space-y-4 absolute left-[2vw]"
         >
           <Skill icon={<Atom size={24} />} name="React/NextJS" progress={90} />
           <Skill
@@ -55,7 +55,7 @@ const Skills = () => {
           style={{
             transform: `translateX(${scrollPosition * 2.5}px)`,
           }}
-          className="drop-shadow-2xl skills2 bg-white dark:bg-slate-950 rounded-3xl lg:w-[22vw] p-8 border-slate-200 dark:border-slate-800 border-[1px] space-y-4 absolute top-[4vh] left-[28vw]"
+          className="drop-shadow-2xl skills2 bg-white dark:bg-zinc-950 rounded-3xl lg:w-[22vw] p-8 border-slate-200 dark:border-slate-800 border-[1px] space-y-4 absolute top-[4vh] left-[28vw]"
         >
           <Skill
             icon={<HardDriveUpload size={24} />}
@@ -73,7 +73,7 @@ const Skills = () => {
           style={{
             transform: `translateX(${scrollPosition * 2}px)`,
           }}
-          className="drop-shadow-2xl skills3 bg-white dark:bg-slate-950 rounded-3xl lg:w-[22vw] p-8 border-slate-200 dark:border-slate-800 border-[1px] space-y-4 absolute top-[42vh] left-[8vw]"
+          className="drop-shadow-2xl skills3 bg-white dark:bg-zinc-950 rounded-3xl lg:w-[22vw] p-8 border-slate-200 dark:border-slate-800 border-[1px] space-y-4 absolute top-[42vh] left-[8vw]"
         >
           <Skill icon={<ListMinus size={24} />} name="Python" progress={60} />
           <Skill
