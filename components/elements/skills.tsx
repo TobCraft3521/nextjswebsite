@@ -75,11 +75,11 @@ const Skills = () => {
           }}
           className="drop-shadow-2xl skills3 bg-white dark:bg-zinc-950 rounded-3xl lg:w-[22vw] p-8 border-slate-200 dark:border-slate-800 border-[1px] space-y-4 absolute top-[42vh] left-[8vw]"
         >
-          <Skill icon={<ListMinus size={24} />} name="Python" progress={60} />
+          <Skill icon={<ListMinus size={24} />} name="Python" progress={50} />
           <Skill
             icon={<Cpu size={24} />}
             name="Hardware/Tech-stuff"
-            progress={50}
+            progress={40}
           />
         </div>
       </div>

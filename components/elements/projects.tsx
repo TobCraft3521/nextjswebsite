@@ -35,23 +35,6 @@ const projects: ProjectProps[] = [
     link: "https://github.com/TobCraft3521/discord-clone",
   },
   {
-    name: "This insane Site",
-    description:
-      "My own personal website to showcase my skills and projects: fully responsive, dark and light mode, cool animations, and much more.",
-    footer: "Dope design, right? 🔥 - I love it!",
-    image: <Image src={TobcraftXyzBanner} className="rounded-xl" alt="" />,
-    link: "https://github.com/TobCraft3521",
-  },
-
-  {
-    name: "Spotify Clone",
-    description:
-      "A fully functional spotify clone 🎵 with liked songs library, playlists 📃, search 🔍, and much more.",
-    footer: "Youtube turorial by Code With Antonio",
-    image: <Image src={SpotifyBanner} className="rounded-xl" alt="" />,
-    link: "https://github.com/TobCraft3521/spotify-clone-nextjs",
-  },
-  {
     name: "Notion Clone",
     description:
       "A Notion clone with realtime cursors 🖱️, diffrently charged accounts 💳 as well as a very cool landing page. admin dashboard and much more.",
@@ -64,6 +47,22 @@ const projects: ProjectProps[] = [
       />
     ),
     link: "https://github.com/TobCraft3521/notion-clone",
+  },
+  {
+    name: "Spotify Clone",
+    description:
+      "A fully functional spotify clone 🎵 with liked songs library, playlists 📃, search 🔍, and much more.",
+    footer: "Youtube turorial by Code With Antonio",
+    image: <Image src={SpotifyBanner} className="rounded-xl" alt="" />,
+    link: "https://github.com/TobCraft3521/spotify-clone-nextjs",
+  },
+  {
+    name: "This insane Site",
+    description:
+      "My own personal website to showcase my skills and projects: fully responsive, dark and light mode, cool animations, and much more.",
+    footer: "Dope design, right? 🔥 - I love it!",
+    image: <Image src={TobcraftXyzBanner} className="rounded-xl" alt="" />,
+    link: "https://github.com/TobCraft3521",
   },
   {
     name: "More Projects",
