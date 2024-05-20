@@ -9,6 +9,8 @@ import LinksBar from "@/components/elements/linksbar"
 import Image from "next/image"
 import GradientShape from "/public/imgs/backgrounds/clickupgradient2.png"
 import MobileSkills from "@/components/elements/mobile-skills"
+import TypeWriter, { TypewriterClass } from "typewriter-effect"
+import Heading from "@/components/elements/heading"
 interface TobCraftxzyProps {}
 
 const TobCraftxzy = () => {
@@ -73,12 +75,13 @@ const TobCraftxzy = () => {
       <Skills />
       <div className="min-h-screen">
         <div className="font-bold text-6xl md:text-7xl flex justify-center items-center w-[100vw] dark:text-white text-[rgb(10,37,64)] md:p-32 md:pb-0 drop-shadow-2xl">
-          <h1 className="md:-translate-x-[25vw] mt-48 md:mt-16 md:mb-20 z-20">
-            Hi! I'm
-            <br />
+          <h1 className="md:-translate-x-[25vw] mt-48 md:mt-16 md:mb-20 z-20 text-center">
+            Hi! I'm <br className="md:hidden" />
             <span className="bg-gradient-to-r from-blue-500 to-purple-500 inline-block text-transparent bg-clip-text">
               Tobias
             </span>
+            <br />
+            <Heading />
           </h1>
         </div>
 
