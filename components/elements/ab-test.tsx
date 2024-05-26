@@ -1,6 +1,8 @@
 "use client"
 import { useFeatureFlagEnabled } from "posthog-js/react"
 
+export const dynamic = "force-dynamic" //dont cache
+
 const ABTestComponent = () => {
   const flagEnabled = useFeatureFlagEnabled("my-flag-a")
 
