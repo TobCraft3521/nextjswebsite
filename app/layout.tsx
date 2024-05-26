@@ -3,6 +3,7 @@ import { GoogleAnalytics } from "@next/third-parties/google"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import { CSPostHogProvider } from "@/lib/providers/ph-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -21,7 +22,7 @@ export default function RootLayout({
       <GoogleAnalytics gaId="G-FNKLR1N6DM" />
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          {children}
+          <CSPostHogProvider>{children}</CSPostHogProvider>
         </ThemeProvider>
       </body>
     </html>

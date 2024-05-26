@@ -11,6 +11,7 @@ import GradientShape from "/public/imgs/backgrounds/clickupgradient2.png"
 import MobileSkills from "@/components/elements/mobile-skills"
 import TypeWriter, { TypewriterClass } from "typewriter-effect"
 import Heading from "@/components/elements/heading"
+import ABTestComponent from "@/components/elements/ab-test"
 interface TobCraftxzyProps {}
 
 const TobCraftxzy = () => {
@@ -99,6 +100,7 @@ const TobCraftxzy = () => {
       <section className="flex justify-center items-center" id="links">
         <Links />
       </section>
+      <ABTestComponent />
       <Footer />
     </div>
   )
