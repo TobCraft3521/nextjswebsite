@@ -19,33 +19,32 @@ interface ProjectsProps {}
 
 const projects: ProjectProps[] = [
   {
-    name: "E-commerce Store",
-    description:
-      "An e-commerce store 🏪 created using Next.js, Stripe 💵, ... with a custom admin dashboard and much more.",
-    footer: "Youtube turorial by JSMastery",
-    image: <Image src={EcommerceBanner} className="rounded-xl" alt="" />,
-    link: "https://github.com/TobCraft3521/ecommerce",
-  },
-  {
     name: "Discord Clone",
     description:
       "A fully functional discord clone with realtime chat 💬, voice chat, video chat 🎥, invite links 🔗 and much more.",
     footer: "Youtube turorial by Code With Antonio",
-    image: <Image src={DiscordBanner} className="rounded-xl" alt="" />,
     link: "https://github.com/TobCraft3521/discord-clone",
+  },
+  {
+    name: "LinguaPro",
+    description:
+      "The next-gen language learning platform 🌍 with a wide variety of tasks including AI 🤖 listening, word matching, gap texts, and much more.",
+    footer: "100% by me. Make sure to star it on GitHub!",
+    link: "",
+  },
+  {
+    name: "E-commerce Store",
+    description:
+      "An e-commerce store 🏪 created using Next.js, Stripe 💵, ... with a custom admin dashboard and much more.",
+    footer: "Youtube turorial by JSMastery",
+    link: "https://github.com/TobCraft3521/ecommerce",
   },
   {
     name: "Notion Clone",
     description:
       "A Notion clone with realtime cursors 🖱️, diffrently charged accounts 💳 as well as a very cool landing page. admin dashboard and much more.",
     footer: "Youtube turorial by Web Prodigies",
-    image: (
-      <Image
-        src={NotionCloneBanner}
-        className="rounded-xl scale-[135%]"
-        alt=""
-      />
-    ),
+
     link: "https://github.com/TobCraft3521/notion-clone",
   },
   {
@@ -53,7 +52,6 @@ const projects: ProjectProps[] = [
     description:
       "A fully functional spotify clone 🎵 with liked songs library, playlists 📃, search 🔍, and much more.",
     footer: "Youtube turorial by Code With Antonio",
-    image: <Image src={SpotifyBanner} className="rounded-xl" alt="" />,
     link: "https://github.com/TobCraft3521/spotify-clone-nextjs",
   },
   {
@@ -61,7 +59,6 @@ const projects: ProjectProps[] = [
     description:
       "My own personal website to showcase my skills and projects: fully responsive, dark and light mode, cool animations, and much more.",
     footer: "Dope design, right? 🔥 - I love it!",
-    image: <Image src={TobcraftXyzBanner} className="rounded-xl" alt="" />,
     link: "https://github.com/TobCraft3521",
   },
   {
@@ -69,7 +66,6 @@ const projects: ProjectProps[] = [
     description:
       "I am also doing some AI 🤖, math or other mini projects to learn new stuff and try out new things. You might find some (not all) on my github.",
     footer: "TensorflowJS, shaders, simulations, ...",
-    image: <Image src={MoreBanner} className="rounded-xl" alt="" />,
     link: "",
   },
 ]
@@ -87,7 +83,9 @@ const Projects = () => {
         My Coding Projects
       </h1>
       <p className="mt-2 text-xl text-gray-300 mb-4">
-        These are some of my large Next.js fullstack projects I made.
+        These are some of my large Next.js fullstack projects I made.{" "}
+        <span className="font-extrabold text-white">Make sure to star ⭐</span>{" "}
+        them on GitHub and follow me there!
       </p>
       <br />
       <div className="flex">

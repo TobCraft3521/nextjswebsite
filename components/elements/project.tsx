@@ -3,12 +3,11 @@ import React from "react"
 export interface ProjectProps {
   name: string
   description: string
-  image: React.ReactNode
   footer: string
   link: string
 }
 
-const Project = ({ name, description, image, footer, link }: ProjectProps) => {
+const Project = ({ name, description, footer, link }: ProjectProps) => {
   return (
     <Link href={link}>
       <div className="h-[270px] flex items-stretch flex-col p-8 rounded-xl bg-white dark:bg-[#141414] drop-shadow-xl">
