@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "tobcraft.xyz",
-  description: "my website",
+  description: "my portfolio and social links site",
 }
 
 export default function RootLayout({
@@ -20,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="w-screen overflow-x-hidden">
       <GoogleAnalytics gaId="G-FNKLR1N6DM" />
+      <head></head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <CSPostHogProvider>{children}</CSPostHogProvider>

@@ -1,10 +1,4 @@
-import Image from "next/image"
 import Project, { ProjectProps } from "./project"
-import DiscordBanner from "/public/imgs/discord-banner.jpg"
-import EcommerceBanner from "/public/imgs/ecommerce-banner.jpg"
-import NotionCloneBanner from "/public/imgs/notion-banner.jpg"
-import SpotifyBanner from "/public/imgs/spotify-banner.jpg"
-import TobcraftXyzBanner from "/public/imgs/tobcraftxyz-banner.jpg"
 
 import {
   Carousel,
@@ -13,7 +7,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel"
-import MoreBanner from "/public/imgs/muchmore.jpg"
 
 interface ProjectsProps {}
 
@@ -30,7 +23,7 @@ const projects: ProjectProps[] = [
     description:
       "The next-gen language learning platform 🌍 with a wide variety of tasks including AI 🤖 listening, word matching, gap texts, and much more.",
     footer: "100% by me. Make sure to star it on GitHub!",
-    link: "",
+    link: "https://linguapro.vercel.app",
   },
   {
     name: "E-commerce Store",

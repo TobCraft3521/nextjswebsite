@@ -12,6 +12,7 @@ import MobileSkills from "@/components/elements/mobile-skills"
 import TypeWriter, { TypewriterClass } from "typewriter-effect"
 import Heading from "@/components/elements/heading"
 import ABTestComponent from "@/components/elements/ab-test"
+import SEO from "@/lib/seo/seo"
 interface TobCraftxzyProps {}
 
 const TobCraftxzy = () => {
@@ -102,6 +103,14 @@ const TobCraftxzy = () => {
       </section>
       <ABTestComponent />
       <Footer />
+
+      <SEO
+        title="tobcraft.xyz"
+        description="My portfolio and social links site"
+        image="favicon.ico"
+        keywords="portfolio, tobcraft, tobias, tobcraft.xyz, tobcraft3521, projects, about, github"
+        url="https://tobcraft.xyz"
+      />
     </div>
   )
 }
