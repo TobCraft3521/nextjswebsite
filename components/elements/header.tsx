@@ -20,7 +20,7 @@ const Header = () => {
           </div>
 
           <div className="font-semibold text-2xl text-[rgb(10,37,64)] dark:text-white hover:text-slate-300">
-            tobcraft.xzy
+            tobcraft.xyz
           </div>
         </div>
         <div className="text-white dark:text-white flex-row gap-5 text-xl font-semibold mr-10 hidden md:flex justify-center items-center">
