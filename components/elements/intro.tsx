@@ -28,13 +28,20 @@ const Intro = () => {
           </h1>
         </div>
         <div className="">
-          Hi, I am <span className="font-bold">Tobias</span>, Hobby Fullstack
-          Software Developer 🔥 from Germany 🇩🇪. I'm currently learning{" "}
-          <span className="font-bold">Next.js</span> as well as all the stuff
-          around it for frontend and backend including{" "}
-          <span className="font-bold">TypeScript</span> 👨🏻‍💻, TailwindCSS,
-          webdesign 🎨, Prisma, DevOps and more. I'm also interested in other
-          topics such as AI, iot, math and much more.
+          Hi, I’m <span className="font-bold">Tobias</span>, a passionate
+          full-stack developer 🔥 from Germany 🇩🇪. I love building complex{" "}
+          <span className="font-bold">Next.js</span> fullstack projects and
+          expanding my skills around the cloud ☁️, devops, webdesign 🎨 and
+          more. Check them out on my{" "}
+          <a href="https://github.com/tobcraft3521" className="underline">
+            Github
+          </a>{" "}
+          and feel free to contribute. Let's connect! 🚀 I would be happy to
+          network with you. Say hello at{" "}
+          <a href="mailto:tobias@tobcraft.xyz" className="underline">
+            tobias@tobcraft.xyz
+          </a>
+          .
         </div>
       </div>
       <button className="bg-gradient-to-r from-blue-500 to-purple-500 font-semibold rounded-full p-[2px] mt-8 md:ml-40">

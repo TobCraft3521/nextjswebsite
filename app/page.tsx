@@ -103,14 +103,6 @@ const TobCraftxzy = () => {
       </section>
       <ABTestComponent />
       <Footer />
-
-      <SEO
-        title="tobcraft.xyz"
-        description="My portfolio and social links site"
-        image="favicon.ico"
-        keywords="portfolio, tobcraft, tobias, tobcraft.xyz, tobcraft3521, projects, about, github"
-        url="https://tobcraft.xyz"
-      />
     </div>
   )
 }

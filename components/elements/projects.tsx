@@ -12,6 +12,13 @@ interface ProjectsProps {}
 
 const projects: ProjectProps[] = [
   {
+    name: "Aktionstage App",
+    description:
+      "A complex web app for my school to manage summer projects ☀️, including room, teacher and project management 📊, and cross page animations ✨.",
+    footer: "Click to star or contribute on GitHub!",
+    link: "https://github.com/tobcraft3521/aktionstage",
+  },
+  {
     name: "Discord Clone",
     description:
       "A fully functional discord clone with realtime chat 💬, voice chat, video chat 🎥, invite links 🔗 and much more.",
