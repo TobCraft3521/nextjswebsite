@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build & next-sitemap",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@next/third-parties": "^14.1.4",
